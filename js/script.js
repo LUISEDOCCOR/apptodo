@@ -1,6 +1,7 @@
 let newtask = document.getElementById("newtask")
 let contenedor = document.getElementById("contenedor")
 let divalert = document.getElementById("divalert")
+let divnotask= document.getElementById("notask")
 let cards = ""
 const hoy = new Date()
 
@@ -24,15 +25,17 @@ function newTask(){
         arraytask.push((new Task(newtask.value)))
         newtask.value = ""
     }
+    contenedor.innerHTML = ""
+
     for(var i in arraytask){
         cards += `
-        <div class="card" style="width: 18rem;">
+        <div class="card mb-3" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Date: <b>${arraytask[i].name}</b></h5>
                 <p class="card-text">${arraytask[i].task}</p>
                 <div class="d-flex flex-wrap gap-2">
-                    <a class="btn btn-danger">Remove</a>
-                    <a class="btn btn-success">To complete</a>
+                    <a class="btn btn-danger" onclick = "eliminar(${i})">Remove</a>
+                    <a class="btn btn-success" onclick = "eliminar(${i})">To complete</a>
                 </div>
             </div>
       </div>`    
@@ -42,6 +45,10 @@ function newTask(){
     let div = document.createElement("DIV")
     div.innerHTML = cards
     contenedor.appendChild(div)
-
+    cards = ""
 }
+
+
+
+
 

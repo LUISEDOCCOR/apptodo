@@ -49,6 +49,8 @@ function newTask(){
 }
 
 
-
+function reset(){
+    window.location.reload()
+}
 
 

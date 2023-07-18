@@ -21,11 +21,19 @@
             <button class="btn btn-outline-secondary" type="button" id="button-add" onclick="newTask()">+</button>
             <input id="newtask" type="text" class="form-control" placeholder="Add new task" aria-label="Example text with button addon" aria-describedby="button-addon1">
         </div>
-        <div id="notask"></div>
         <div id="divalert" class="mx-5"></div>
         <div id="contenedor">
-        <div><a class="btn btn-danger" onclick="reset()">Reset</a></div>    
+            <div class="alert alert-success" role="alert">
+                There is no task 
+              </div>   
         </div>
-    </main>    
+        <div class="d-flex justify-content-center"><a class="btn btn-danger " onclick="reset()">Reset</a></div>    
+    </main>
+    <footer >
+        <div class="d-flex text-center flex-wrap flex-column align-content-center">
+            <h4 id="by">By Luis Eduardo Ocegueda Cortes</h4>
+            <a target="_blank" href="https://github.com/LUISEDOCCOR/apptodo">Github</a>
+        </div>
+        </footer>    
 </body>
 </html>

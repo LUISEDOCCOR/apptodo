@@ -34,3 +34,19 @@ header{
     flex-wrap: wrap;
     gap: 5;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #002c2b;
+    color: white;
+    padding: 10px;
+
+}
+
+#by{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+

@@ -58,7 +58,7 @@ function eliminar(i, x){
     if(x == "c"){
         alert("Se ha completado correctamente")
     }else{
-        alert("Se a eliminado correctamente")
+        alert("Se ha eliminado correctamente")
     }
     console.log(i)
     delete(arraytask[i])

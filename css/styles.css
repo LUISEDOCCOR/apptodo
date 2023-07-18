@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@700&family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:  #0a837f;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-add{
+    border-radius: 0;
+    border: none;
+    background-color: #ff3d00;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+#newtask{
+    background-color: #ffbc11;
+    border: none;
+    border-radius: 0;
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5;
+}

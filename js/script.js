@@ -17,7 +17,7 @@ function newTask(){
     if(newtask.value == ""){
         divalert.innerHTML =`
             <div class="alert alert-danger" role="alert">
-                Rellene todos los campos
+                Fill in all fields
             </div>
         `
     }else{
